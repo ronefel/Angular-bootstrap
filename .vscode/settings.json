@@ -1,19 +1,13 @@
 {
   "terminal.integrated.defaultProfile.windows": "Cmder",
   "terminal.integrated.profiles.windows": {
-      "Cmder": {
-          "name": "Cmder",
-          "path": [
-              "${env:windir}\\Sysnative\\cmd.exe",
-              "${env:windir}\\System32\\cmd.exe"
-          ],
-          "args": [
-              "/k",
-              "C:\\cmder\\vendor\\bin\\vscode_init.cmd"
-          ],
-          "icon": "terminal-cmd",
-          "color": "terminal.ansiGreen"
-      },
+    "Cmder": {
+      "name": "Cmder",
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": ["/k", "C:\\cmder\\vendor\\bin\\vscode_init.cmd"],
+      "icon": "terminal-cmd",
+      "color": "terminal.ansiGreen"
+    }
   },
   // Is git enabled
   "git.enabled": true,
@@ -27,19 +21,19 @@
   "tabnine.experimentalAutoImports": true,
   "files.autoSave": "onFocusChange",
   "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-      "source.fixall.eslint": true,
-      "source.organizeImports": true
+    "source.fixall.eslint": true,
+    "source.organizeImports": true
   },
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "[javascript]": {
-      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "files.eol": "\n",
   "npm-intellisense.scanDevDependencies": true,
@@ -50,5 +44,6 @@
   "angular.enable-strict-mode-prompt": true,
   "angular.log": "off",
   "angular.disableAutomaticNgcc": true,
-  "angular.forceStrictTemplates": true
+  "angular.forceStrictTemplates": true,
+  "prettier.printWidth": 130
 }

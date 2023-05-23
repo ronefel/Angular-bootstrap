@@ -16,7 +16,7 @@ export class GenericValidator {
           if (this.validationMessages[controlKey]) {
             messages[controlKey] = '';
             if ((c.dirty || c.touched) && c.errors) {
-              Object.keys(c.errors).map(messageKey => {
+              Object.keys(c.errors).map((messageKey) => {
                 if (this.validationMessages[controlKey][messageKey]) {
                   messages[controlKey] += this.validationMessages[controlKey][messageKey];
                 }

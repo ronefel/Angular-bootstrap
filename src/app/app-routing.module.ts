@@ -9,8 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   {
     path: 'conta',
-    loadChildren: () =>
-      import('./conta/conta.module').then((m) => m.ContaModule),
+    loadChildren: () => import('./conta/conta.module').then((m) => m.ContaModule),
   },
 
   { path: 'nao-encontrato', component: NotFoundComponent },
