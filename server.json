@@ -1,0 +1,15 @@
+{
+  "conta": [
+    {
+      "id": 1,
+      "email": "sss@sss.com",
+      "password": "123123"
+    },
+    {
+      "email": "rone@shifttecnologia.com.br",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 2
+    }
+  ]
+}

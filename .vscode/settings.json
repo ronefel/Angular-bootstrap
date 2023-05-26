@@ -45,5 +45,5 @@
   "angular.log": "off",
   "angular.disableAutomaticNgcc": true,
   "angular.forceStrictTemplates": true,
-  "prettier.printWidth": 130
+  "prettier.printWidth": 130,
 }
