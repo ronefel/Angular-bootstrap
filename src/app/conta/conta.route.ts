@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ContaAppComponent } from './conta.app.component';
 import { LoginComponent } from './login/login.component';
+import { canActivate, canDeactivate } from './services/conta.guard';
 
 const contaRouterConfig: Routes = [
   {
     path: '',
     component: ContaAppComponent,
     children: [
-      { path: 'cadastro', component: CadastroComponent },
+      { path: 'cadastro', component: CadastroComponent, canActivate: [canActivate], canDeactivate: [canDeactivate] },
       { path: 'login', component: LoginComponent },
     ],
   },

@@ -8,6 +8,8 @@ import { Usuario } from './../models/usuario';
 export class ContaService extends BaseService {
   constructor(private http: HttpClient) {
     super();
+
+    console.log(this.UrlServiceV1);
   }
 
   registrarUsuario(usuario: Usuario) {
@@ -18,5 +20,11 @@ export class ContaService extends BaseService {
     return response;
   }
 
-  login(usuario: Usuario) {}
+  login(usuario: Usuario) {
+    const response = this.http
+      .post(this.UrlServiceV1 + 'conta/login', usuario, this.ObterHeaderJson())
+      .pipe(map(this.extractData), catchError(this.serviceError));
+
+    return response;
+  }
 }

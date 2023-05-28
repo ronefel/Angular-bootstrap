@@ -33,7 +33,7 @@
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.eol": "\n",
   "npm-intellisense.scanDevDependencies": true,
